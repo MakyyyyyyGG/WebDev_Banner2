@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+
 * {
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,18 +15,22 @@
 
 body {
     margin: auto;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     max-width: 1200px;
-    background-image: url(./images/v904-nunny-017.jpg);
+    background-color: #f9f8f5;
+    /* background-image: url(./images/v904-nunny-017.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
     object-fit: cover;
 }
 
 section {
-    height: 100vh;
     padding: 2rem;
+}
+
+#main {
+    height: 100vh;
 }
 
 section h1 {
@@ -202,7 +209,6 @@ header.is-scrolling .container {
 } */
 
 header .navbar {
-    border-radius: 24px;
     display: flex;
     align-items: center;
 }
@@ -226,6 +232,7 @@ header .navbar nav ul {
 }
 
 nav ul li a {
+
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
@@ -233,7 +240,7 @@ nav ul li a {
     opacity: 50%;
     font-size: 15px;
     padding: 10px 13px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-icon i {
@@ -243,19 +250,19 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:active {
     border-radius: 37px;
-    background-color: #f8c8bc;
+    background-color: #b5b5b5;
     box-shadow: rgba(47, 43, 67, 0.1) 0px -1px 0px 0px inset, rgba(47, 43, 67, 0.1) 0px 1px 3px 0px;
     color: black;
 }
 
 #touch {
     border-radius: 37px;
-    background-color: #f8c8bc;
+    background-color: #e1e1e1;
     box-shadow: rgba(47, 43, 67, 0.1) 0px -1px 0px 0px inset, rgba(47, 43, 67, 0.1) 0px 1px 3px 0px;
 }
 
 #touch:hover {
-    background-color: #ff997f;
+    background-color: #b5b5b5;
 }
 
 /* ------------------------------------------------------- main ------------------------------------------------------------- */
@@ -291,10 +298,12 @@ section #box1 {
     font-size: 18px;
     color: #000000;
     opacity: 50%;
+    transition: .3s ease-in-out;
+    font-weight: 300;
 }
 
 #description {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     text-align: justify;
     font-size: 20px;
 }
@@ -307,6 +316,7 @@ section #box1 {
 }
 
 #box1 input {
+    font-family: 'DM Sans', sans-serif;
     margin-top: 10px;
     padding: 16px 32px;
     border-radius: 120px;
@@ -314,18 +324,20 @@ section #box1 {
     font-weight: bold;
     border: none;
     background-color: #373737;
-    box-shadow: rgba(58, 54, 80, 0.1) 0px -1px 0px 0px inset, rgba(47, 43, 67, 0.1) 0px 1px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     font-size: 1.1em;
     line-height: 19.2px;
-    font-family: 'Montserrat', sans-serif;
     width: 300px;
     transition: .3s ease-in-out;
+    font-family: 'Lora', serif;
+
 
 }
 
 #box1 input:hover {
-    background-color: #f59c86;
+    background-color: #fae4d0;
     cursor: pointer;
+    color: #343434;
 }
 
 /* ------------------------------------------------------- porfolio ------------------------------------------------------------- */
@@ -336,14 +348,12 @@ section #box1 {
     border-radius: 16px;
     text-align: center;
     margin: auto;
-    width: 100%;
     /* background-color: #f59c86; */
     /* From https://css.glass */
-/* From https://css.glass */
-    background: rgba(229, 178, 165, 1);
+    /* From https://css.glass */
+    /* background: rgba(229, 178, 165, 1); */
+    background-color: #fae4d0;
     border-radius: 16px;
-    margin-bottom: 20px;
-    width: 100%;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
@@ -353,7 +363,7 @@ section #box1 {
 .content {
     height: 100%;
     width: 100%;
-    border-radius: 37px;
+    border-radius: 13px;
     color: #373737;
     backface-visibility: hidden;
     overflow: hidden;
@@ -369,12 +379,13 @@ section #box1 {
 }
 
 
-.card{
-    background-color: #f8c8bc;
+.card {
+    /* background-color: #f8c8bc; */
+    background-color: #f9f8f5;
     flex: flex-start;
     display: inline-block;
     margin: 25px;
-    border-radius: 37px; 
+    border-radius: 13px;
     z-index: 2;
     max-height: 400px;
     position: relative;
@@ -383,22 +394,36 @@ section #box1 {
     overflow: hidden;
     transition: .3s ease-in-out;
 }
-.card h3, p{
-    margin-block: 20px;
+
+.card h3,
+p {
+    margin-block: 10px;
     text-align: justify;
 }
-.card span{
+
+.card span {
     position: absolute;
     bottom: -25px;
-    z-index: 1; 
+    z-index: 1;
     left: 20px;
     font-size: 60px;
+    opacity: 40%;
 }
-.card img{
-    border-radius: 1rem;
+
+.card img {
+    opacity: 80%;
+    border-radius: 13px;
     width: 100%;
+    transition: .3s ease-in-out;
 }
-.card #programmingLogo, .card #services{
+
+.card img:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+}
+
+.card #programmingLogo,
+.card #services {
     max-height: 300px;
     width: 150px;
     object-fit: cover;
@@ -412,7 +437,7 @@ section #box1 {
     color: #000000;
     opacity: 75%;
     margin: 0 2rem 0 2rem;
-    border-radius: 37px;
+    border-radius: 13px;
     display: inline-block;
     padding: 10px 20px;
     font-weight: 500;
@@ -422,12 +447,12 @@ section #box1 {
 }
 
 .container3 label:hover {
-    background-color: #f8c8bc ;
+    background-color: #f9f8f5;
     cursor: pointer;
 }
 
 .container3 input:checked+label {
-    background: #f8c8bc;
+    background: #f9f8f5;
     color: #000000;
 }
 
@@ -461,7 +486,3 @@ section #box1 {
         transform: translateY(0)
     }
 }
-
-
-
-
