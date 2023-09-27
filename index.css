@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
     scroll-behavior: smooth;
@@ -16,7 +15,7 @@
 body {
     margin: auto;
     font-family: 'DM Sans', sans-serif;
-    max-width: 1200px;
+    width: 1200px;
     background-color: #f9f8f5;
     /* background-image: url(./images/v904-nunny-017.jpg);
     background-attachment: fixed;
@@ -24,19 +23,23 @@ body {
     background-size: 100%; */
     object-fit: cover;
 }
-
-section {
-    padding: 2rem;
+.page-links{
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 5px;
+    opacity: 75%;
 }
 
-#main {
+section {
     height: 100vh;
+    padding-block: 2rem;
+    width: 100%;
 }
 
 section h1 {
     color: #000000;
     opacity: 75%;
-    font-family: 'Lora', serif;
+font-family: 'Fjalla One', sans-serif;
     font-size: 48px;
 }
 
@@ -267,22 +270,30 @@ nav ul li a:active {
 
 /* ------------------------------------------------------- main ------------------------------------------------------------- */
 .container2 {
+    border-radius: 16px;
     display: flex;
     height: 100%;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    width: 100%;
+    /* justify-content: center; */
 }
 
-section #box1 {
+#box1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 60%;
 }
 
 #box2 {
-    padding-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
 }
 
@@ -311,7 +322,7 @@ section #box1 {
 .box h1 {
     color: #000000;
     opacity: 75%;
-    font-family: 'Lora', serif;
+font-family: 'Fjalla One', sans-serif;
     font-size: 48px;
 }
 
@@ -329,13 +340,11 @@ section #box1 {
     line-height: 19.2px;
     width: 300px;
     transition: .3s ease-in-out;
-    font-family: 'Lora', serif;
-
-
+font-family: 'Fjalla One', sans-serif;
 }
 
 #box1 input:hover {
-    background-color: #fae4d0;
+    background-color: #e0efd8;
     cursor: pointer;
     color: #343434;
 }
@@ -352,9 +361,9 @@ section #box1 {
     /* From https://css.glass */
     /* From https://css.glass */
     /* background: rgba(229, 178, 165, 1); */
-    background-color: #fae4d0;
+    background-color: #e0efd8;
     border-radius: 16px;
-    margin-top: 10px;
+    margin-block: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -387,7 +396,7 @@ section #box1 {
     margin: 25px;
     border-radius: 13px;
     z-index: 2;
-    max-height: 400px;
+    height: 380px;
     position: relative;
     max-width: 300px;
     padding: 2rem;
@@ -396,7 +405,7 @@ section #box1 {
 }
 
 .card h3,
-p {
+.card p {
     margin-block: 10px;
     text-align: justify;
 }
@@ -409,17 +418,23 @@ p {
     font-size: 60px;
     opacity: 40%;
 }
+.card p{
+    font-size: 14px;
+}
 
 .card img {
     opacity: 80%;
     border-radius: 13px;
+    object-fit: cover;
     width: 100%;
     transition: .3s ease-in-out;
 }
-
+#works{
+    height: 130px;
+}
 .card img:hover {
     opacity: 100%;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .card #programmingLogo,
@@ -485,4 +500,182 @@ p {
         opacity: 1;
         transform: translateY(0)
     }
+}
+
+/* ------------------------------------------------------- contact ------------------------------------------------------------- */
+
+#contact{
+    width: 100%;
+}
+#box5{
+    display: flex;
+    flex-direction: column;
+}
+#box4, #box5{
+    position: relative;
+    width: 50%;
+    margin-inline: 5px;
+    border-radius: 16px;
+}
+#box5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #e0efd8;
+}
+#box4{
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: #e0efd8;
+}
+iframe{
+    border-radius: 13px;
+    padding: 5px;
+    border: 2px dashed #f9f8f5;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact form{
+    width: 100%;
+}
+.input{
+    margin-block: 1rem;
+    width: 100%;
+    display: flex;
+}
+.icon{
+    border-radius: 16px;
+    background-color: #f9f8f5;
+    padding: .5rem .5rem .5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.input input{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 13px;
+    width: 80%;
+    height: 50px;   
+}
+.input input:focus{
+    outline: none;
+}
+
+.icon i{
+    margin-top: 14px;
+    font-size: 20px;
+    opacity: 75%;
+}
+.icon textarea{
+    background-color: transparent;
+    padding-top: .8rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    width: 80%;
+    border: none;
+    resize: none;
+}
+.icon textarea:focus{
+    outline: none;
+}
+
+.input label{
+    margin-top: 18px;
+    opacity: 75%;
+    width: 100px;
+font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 2rem;
+}
+form input[type="submit"]{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'Fjalla One', sans-serif;
+    transition: .3s ease-in-out;
+    width: 100%;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: none;
+    background-color: #b2bfac;
+    color: #f6f6f6;
+    cursor: pointer;
+}
+
+.socials{
+    width: 100%;
+}
+.socials_container{
+    margin-top: 20px;
+    width: 100%;
+}
+.icons{
+    display: flex;
+    align-items: flex-end;
+}
+
+.soc{
+    transition: .3s ease-in-out;
+    width: 50px;
+    opacity: 75%;
+    background-color: #f9f8f5;
+    padding: 10px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.horizontal_socials img{
+    transition: 0.3s ease-in-out;
+    width: 40px;
+    background-color: #f9f8f5;
+    padding: 10px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.socials_container h1{
+    position: absolute;
+    bottom: 90px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+}
+.socials_container .horizontal_socials {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: auto;
+  }
+.horizontal_socials div{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.horizontal_socials div i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+#enve{
+    width: 40px;
+    background-color: #f9f8f5;
+    padding: 10px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.soc:hover{
+    cursor: pointer;
+   transform:scale(1.2)
+}
+form input[type="submit"]:hover{
+    background-color: #85957d;
 }
