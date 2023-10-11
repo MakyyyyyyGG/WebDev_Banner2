@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <meta charset="UTF-8">
@@ -15,7 +17,7 @@
 
 <body>
     <header>
-        <div class="container ">
+        <div class="container">
             <img src="./images/Blue Circle World Modern Technology Logo.png" alt="">
             <div class="navbar">
                 <nav>
@@ -64,7 +66,7 @@
 
     <!-- ---------------------------------------------------- main --------------------------------------------------------- -->
 
-    <section id="main">
+    <section id="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <div class="container2">
             <div class="box" id="box1">
                 <h3>Developing products that users will love</h3>
@@ -82,11 +84,12 @@
 
     <!-- -------------------------------- About Me -------------------------------- -->
 
-    <section>
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <h1 class="page-links">About Me</h1>
         <div class="about-container">
             <img src="./images/pp6.png" alt="">
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500">
                 <span>Hola! Como Estas</span>
                 <p style="margin-top: 1rem; color: #373737;">I'm Mark Anthony Clerigo, a passionate programmer and
                     technology enthusiast
@@ -96,7 +99,8 @@
                     and reading. Overall, I'm dedicated to continuous learning and making a positive impact through my
                     work.</p>
             </div>
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500">
                 <span>Tools</span>
                 <div class="tool-container">
                     <div>
@@ -127,7 +131,8 @@
             </div>
 
 
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1800">
                 <span>Skills and Expertise</span>
                 <div class="tool-container">
                     <div>
@@ -170,10 +175,11 @@
             </div>
 
 
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500">
                 <span>Education</span>
                 <div class="education-grid">
-                    <div>
+                    <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                         <h1>Elementary</h1>
                         <div class="school">
                             <img src="./images/elem.png" alt="">
@@ -193,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                         <h1>High School</h1>
                         <div class="school">
                             <img src="./images/hs.png" alt="">
@@ -213,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                         <h1>Senior-High School</h1>
                         <div class="school">
                             <img src="./images/hs.png" alt="">
@@ -233,7 +239,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                         <h1>College</h1>
                         <div class="school">
                             <img src="./images/bu.png" alt="">
@@ -262,7 +268,7 @@
     <!-- ---------------------------------------------------- Portfolio --------------------------------------------------------- -->
 
     <h1 class="page-links" id="portfolio">Portfolio</h1>
-    <div class="container3">
+    <div class="container3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <input id="tab-1" type="radio" name="tabs" checked>
         <label for="tab-1">Skills</label>
 
@@ -481,7 +487,8 @@
     <!-- -------------------------------------------- CONTACT --------------------------------------------------- -->
 
     <h1 class="page-links" id="contact">Contact</h1>
-    <section id="main" class="contactSec">
+    <section id="main" class="contactSec" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500">
         <div class="container2">
             <div class="box" id="box4">
                 <iframe
@@ -575,7 +582,10 @@
         <i class="fa-regular fa-copyright"></i>
         <p>All Rights Reserved By Mark Cleigo 2023</p>
     </div>
-    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
