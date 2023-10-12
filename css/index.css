@@ -480,6 +480,7 @@ nav ul li a:active {
 }
 
 .container3 input:checked+label {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background: #f9f8f5;
     color: #000000;
 }
@@ -664,6 +665,7 @@ iframe {
 }
 
 form input[type="submit"] {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     font-size: 20px;
     letter-spacing: 3px;
     font-family: 'Young Serif', serif;
@@ -839,8 +841,8 @@ form input[type="submit"]:hover {
 .education-grid div img {
 
     margin-right: 30px;
-    height: 230px;
-    width: 230px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
 }
 

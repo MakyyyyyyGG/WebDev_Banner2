@@ -393,6 +393,7 @@ nav ul li a:active {
 }
 
 .container3 input:checked+label {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background: #f9f8f5;
     color: #000000;
 }
